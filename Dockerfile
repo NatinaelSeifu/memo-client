@@ -8,10 +8,8 @@ RUN npm install
 
 COPY . .
 
-ENV BACKEND_URI=${BACKEND_URI}
-
 ENV PATH /app/node_modules/.bin:$PATH
 
-EXPOSE ${PORT}
+EXPOSE 3000
 
 CMD ["npm", "start"]
