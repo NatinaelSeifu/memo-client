@@ -8,8 +8,7 @@ RUN npm install
 
 COPY . .
 
-ENV BACKEND_URI=${BACKEND_URI}
-
+# ENV REACT_URL=${REACT_URL}
 ENV PATH /app/node_modules/.bin:$PATH
 
 EXPOSE ${PORT}
