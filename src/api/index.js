@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'http://internal-ecs-backend-alb-731307141.us-east-2.elb.amazonaws.com';
+const url = 'http://ecs-backend-alb01-1901434188.us-east-2.elb.amazonaws.com';
 
 export const fetchPosts = () => axios.get(url);
 export const createPost = (newPost) => axios.post(url, newPost);
